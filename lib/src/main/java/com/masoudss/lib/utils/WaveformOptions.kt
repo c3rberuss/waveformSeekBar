@@ -2,9 +2,9 @@ package com.masoudss.lib.utils
 
 import android.content.Context
 import android.net.Uri
-import linc.com.amplituda.Amplituda
-import linc.com.amplituda.AmplitudaProcessingOutput
-import linc.com.amplituda.exceptions.AmplitudaException
+import com.linc.amplituda.Amplituda
+import com.linc.amplituda.AmplitudaProcessingOutput
+import com.linc.amplituda.exceptions.AmplitudaException
 
 internal object WaveformOptions {
 

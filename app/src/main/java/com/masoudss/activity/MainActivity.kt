@@ -19,8 +19,6 @@ import com.masoudss.lib.SeekBarOnProgressChanged
 import com.masoudss.lib.WaveformSeekBar
 import com.masoudss.lib.utils.Utils
 import com.masoudss.lib.utils.WaveGravity
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -175,13 +173,13 @@ class MainActivity : AppCompatActivity() {
             progressDialog.show()
 
 
-            doAsync {
+            /*doAsync {
                 binding.waveformSeekBar.setSampleFrom(path!!)
 
                 uiThread {
                     progressDialog.dismiss()
                 }
-            }
+            }*/
         }
     }
 

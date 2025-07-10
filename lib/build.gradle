@@ -2,12 +2,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 32
+    namespace 'com.masoudss.waveformseekbar'
+    compileSdk 35
     ndkVersion "21.1.6352462"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 32
+        minSdk 14
+        targetSdk 35
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -21,11 +22,16 @@ android {
 
 }
 
+kotlin {
+    jvmToolchain(17)
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "androidx.appcompat:appcompat:1.4.2"
-    compileOnly 'com.github.lincollincol:amplituda:2.1.0'
+    implementation "androidx.appcompat:appcompat:1.7.1"
+    compileOnly 'com.github.lincollincol:Amplituda:v2.3.0'
 }
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }

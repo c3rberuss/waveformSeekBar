@@ -12,6 +12,7 @@ import com.masoudss.lib.utils.ThreadBlocking
 import com.masoudss.lib.utils.Utils
 import com.masoudss.lib.utils.WaveGravity
 import com.masoudss.lib.utils.WaveformOptions
+import com.masoudss.waveformseekbar.R
 import java.io.File
 import kotlin.math.abs
 import kotlin.math.floor

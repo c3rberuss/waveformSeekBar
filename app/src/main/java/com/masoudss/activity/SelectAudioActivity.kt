@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.masoudss.adapter.AudioAdapter
 import com.masoudss.databinding.ActivitySelectAudioBinding
 import com.masoudss.model.AudioModel
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 
 
 class SelectAudioActivity : AppCompatActivity() {
@@ -44,7 +42,7 @@ class SelectAudioActivity : AppCompatActivity() {
     @SuppressLint("NotifyDataSetChanged")
     private fun loadAudioFiles() {
 
-        doAsync {
+        /*doAsync {
 
             var cursor: Cursor? = null
             try {
@@ -74,7 +72,7 @@ class SelectAudioActivity : AppCompatActivity() {
             uiThread {
                 binding.audioRecyclerView.adapter?.notifyDataSetChanged()
             }
-        }
+        }*/
     }
 
     fun onSelectAudio(audioModel: AudioModel) {
